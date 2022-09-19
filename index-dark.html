@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devjobs-Web-App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #19202D;">
+
+    <!--Banner header Mobile view-->
+    <div class="container-fluid d-xs-block d-sm-block d-md-none d-lg-none d-xl-none px-md-5 px-lg-5 px-xl-5 bgcover-img1" style="height: 20vh">
+        <div class="d-flex flex-row align-items-center px-3 py-4 mx-xl-5">
+            <div class="col-8 col-md-10 col-lg-10 col-xl-10" style="color:#ffffff"><img src="./img&icon/logo.svg" alt="logo" style="width: 115px; height:32px"></div>
+            <div class="col-4 col-md-2 col-lg-2 col-xl-2 text-center">
+                <div class="d-flex flex-row align-items-center justify-content-end">
+                    <div class="col-3 text-end"><img src="./img&icon/icon-sun.svg" alt="sun"></div>
+                    <div class="col-6 text-end"><a href="http://127.0.0.1:5501/index.html"><img src="./img&icon/slide_off.png" alt="slide" style="width:40px; height:20px"></a></div>
+                    <div class="col-3 text-end"><img src="./img&icon/icon-moon.svg" alt="moon"></div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+     <!--Banner header Tablet and Desktop view-->
+     <div class="container-fluid d-none d-md-block d-lg-block d-xl-block px-md-5 px-lg-5 px-xl-5 bgcover-img1" style="height: 20vh; border-bottom-left-radius: 75px">
+        <div class="d-flex flex-row align-items-center py-4 mx-xl-5">
+            <div class="col-8 col-md-10 col-lg-10 col-xl-10 ps-4"><img src="./img&icon/logo.svg" alt="logo" style="width: 115px; height:32px"></div>
+            <div class="col-4 col-md-2 col-lg-2 col-xl-2 text-center">
+                <div class="d-flex flex-row align-items-center justify-content-end">
+                    <div class="col-3 text-end"><img src="./img&icon/icon-sun.svg" alt="sun"></div>
+                    <div class="col-6"><a href="http://127.0.0.1:5501/index.html"><img src="./img&icon/slide_off.png" alt="slide" style="width:40px; height:20px"></a></div>
+                    <div class="col-3 text-start"><img src="./img&icon/icon-moon.svg" alt="moon"></div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <!--Banner Search on mobile view-->
+    <form action="">
+        <div class="container-sm d-xs-block d-sm-block d-md-none d-lg-none d-xl-none px-4 mb-5 mt-n4 text-center">
+            <div class="d-flex flex-row align-items-center p-2 text-center bg-dark rounded-2">
+                <div class="col-8"><input class="form-control form-control-sm bg-dark text-light" type="text" list="filterTittle" attribute="text" placeholder="Filter by title…" style="border: none;"></div>
+                <datalist id="filterTittle">
+                    <option value="Senior Software Engineer">
+                    <option value="Haskell and PureScript Dev">
+                    <option value="Midlevel Back End Engineer">
+                    <option value="Senior Application Engineer">
+                    <option value="Remote DevOps Engineer">
+                    <option value="Desktop Support Manager">
+                    <option value="iOS Engineer">
+                    <option value="Senior EJB Developer">
+                    <option value="Senior Frontend Developer">
+                    <option value="App & Website Designer">
+                    <option value="Fullstack Developer">
+                    <option value="Technical Lead Engineer">
+                </datalist>
+                <div class="col-2"><img src="./img&icon/filter-light.png" alt="filter"></div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#searchModal" style="height: 48px; width: 48px">
+                        <img class="text-white" src="./img&icon/icon-search.png" alt="search">
+                    </button>
+                      
+                      <!-- Modal -->
+                    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="width: 350px; height: 250px;">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">                             
+                                <div class="modal-body">
+                                    <form action="">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="text-end"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                                                <div class="d-flex flex-row p-3">
+                                                    <div class="col-2">
+                                                        <div class="text-start"><img src="./img&icon/icon-location.svg"></div>
+                                                    </div>
+                                                    <div class="10">
+                                                        <div><input class="form-control form-control" type="text" attribute="text" placeholder="Filter by Location" style="border: none;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="d-flex flex-row p-3">
+                                                        <div class="col-2 text-start"><input class="form-ckeckbox-input" type="checkbox" name="Full Time Only"></div>
+                                                        <div class="col-10 text-start"><h1 class="fs-6 fw-bolder">Full Time</h1></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col border">
+                                                    <div class="col text-center"><button class="btn fw-semibold btn-primary" type="submit" style="width: 279px; height: 48px;">Apply Now</button></div>                                                      
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>
+                   
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <!--Banner Search on tablet view-->
+    <form action="">
+        <div class="container-sm d-none d-md-block d-lg-none d-xl-none px-4 mb-5 mt-n4">
+            <div class="d-flex flex-row px-4 py-3 align-items-center text-center bg-dark rounded-2">
+                <div class="col-4">
+                    <div class="d-flex flex-row">
+                        <div class="col-2"><img src="./img&icon/icon-search.svg" alt="icon search"></div>
+                        <div class="col-10"><input class="form-control form-control-sm bg-dark text-light" type="text" list="filterTittle" attribute="search" placeholder="Filter by title…" style="border: none;">
+                            <datalist id="filterTittle">
+                                <option value="Senior Software Engineer">
+                                <option value="Haskell and PureScript Dev">
+                                <option value="Midlevel Back End Engineer">
+                                <option value="Senior Application Engineer">
+                                <option value="Remote DevOps Engineer">
+                                <option value="Desktop Support Manager">
+                                <option value="iOS Engineer">
+                                <option value="Senior EJB Developer">
+                                <option value="Senior Frontend Developer">
+                                <option value="App & Website Designer">
+                                <option value="Fullstack Developer">
+                                <option value="Technical Lead Engineer">
+                            </datalist>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="d-flex flex-row">
+                        <div class="col-2"><img src="./img&icon/icon-location.svg" alt="icon location"></div>
+                        <div class="col-10"><input class="form-control form-control-sm bg-dark text-light" type="text" list="filterLocation" attribute="search" placeholder="Filter by location…" style="border: none;">
+                            <datalist id="filterLocation">
+                                <option value="Germany">
+                                <option value="Japan">
+                                <option value="New Zealand">
+                                <option value="Russia">
+                                <option value="Singapore">
+                                <option value="Thailand">
+                                <option value="United Kingdom">
+                                <option value="United States">
+                            </datalist>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="d-flex flex-row align-items-center text-center">
+                        <div class="col-2"><input class="form-ckeckbox-input text-dark" type="checkbox" style="width: 20px; height: 20px"></div>
+                        <div class="col-6 text-start text-light"><h1 class="fs-6 fw-bolder">Full Time</h1></div>
+                        <div class="col-4"><button class="btn fw-semibold btn-primary" type="submit" style="width:80px; height:48px">Search</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <!--Banner Search on desktop view-->
+    <form action="">
+        <div class="container-sm d-none d-lg-block d-xl-block px-4 mb-5 mt-n5">
+            <div class="d-flex flex-row px-4 py-3 align-items-center text-center bg-dark rounded-2">
+                <div class="col-4">
+                    <div class="d-flex flex-row">
+                        <div class="col-2"><img src="./img&icon/icon-search.svg" alt="icon search"></div>
+                        <div class="col-10"><input class="form-control form-control-sm bg-dark text-light" type="text" list="filterTittle" attribute="search" placeholder="Filter by title…" style="border: none;">
+                            <datalist id="filterTittle">
+                                <option value="Senior Software Engineer">
+                                <option value="Haskell and PureScript Dev">
+                                <option value="Midlevel Back End Engineer">
+                                <option value="Senior Application Engineer">
+                                <option value="Remote DevOps Engineer">
+                                <option value="Desktop Support Manager">
+                                <option value="iOS Engineer">
+                                <option value="Senior EJB Developer">
+                                <option value="Senior Frontend Developer">
+                                <option value="App & Website Designer">
+                                <option value="Fullstack Developer">
+                                <option value="Technical Lead Engineer">
+                            </datalist>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="d-flex flex-row">
+                        <div class="col-2"><img src="./img&icon/icon-location.svg" alt="icon location"></div>
+                        <div class="col-10"><input class="form-control form-control-sm bg-dark text-light" type="text" list="filterLocation" attribute="search" placeholder="Filter by location…" style="border: none;">
+                            <datalist id="filterLocation">
+                                <option value="Germany">
+                                <option value="Japan">
+                                <option value="New Zealand">
+                                <option value="Russia">
+                                <option value="Singapore">
+                                <option value="Thailand">
+                                <option value="United Kingdom">
+                                <option value="United States">
+                            </datalist>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="d-flex flex-row align-items-center text-center">
+                        <div class="col-2"><input class="form-ckeckbox-input" type="checkbox" style="width: 20px; height: 20px"></div>
+                        <div class="col-6 text-start text-light"><h1 class="fs-6 fw-bolder">Full Time Only</h1></div>
+                        <div class="col-4 text-start"><button class="btn fw-semibold btn-primary" type="submit" style="width:123px; height:48px">Search</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!--Jobs Banner-->
+    <div class="container px-4 mb-5">
+        <div class="row gy-5 gx-2 row-cols-xl-4 gx-xl-4">
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="col-12 ps-4 pb-2 bg-dark rounded-2" >
+                    <img class="mt-n4" src="./img&icon/scoot.png" alt="scoot">
+                    <p class="text-secondary">5h ago . Full Time</p>
+                    <a class="text-decoration-none" href="http://127.0.0.1:5501/scoot-dark.html"><h6 class="text-light fw-bolder">Senior Software Engineer</h6></a>
+                    <p class="text-secondary">Scoot</p>
+                    <p class="text-primary">United Kingdom</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="col-12 ps-4 pb-2 bg-dark rounded-2">
+                    <img class="mt-n4" src="./img&icon/blogr.png" alt="scoot">
+                    <p class="text-secondary">20h ago . Part Time</p>
+                    <h6 class="text-light fw-bolder">Haskell and PureScript Dev</h6>
+                    <p class="text-secondary">Blogr</p>
+                    <p class="text-primary">United States</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="col-12 ps-4 pb-2 bg-dark rounded-2">
+                    <img class="mt-n4" src="./img&icon/vector.png" alt="scoot">
+                    <p class="text-secondary">1d ago . Part Time</p>
+                    <h6 class="text-light fw-bolder">Midlevel Back End Engineer </h6>
+                    <p class="text-secondary">Vector</p>
+                    <p class="text-primary">Russia</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="col-12 ps-4 pb-2 bg-dark rounded-2">
+                    <img class="mt-n4" src="./img&icon/officelite.png" alt="scoot">
+                    <p class="text-secondary">2d ago . Full Time</p>
+                    <h6 class="text-light fw-bolder">Senior Application Engineer</h6>
+                    <p class="text-secondary">Office Lite</p>
+                    <p class="text-primary">Japan</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="col-12 ps-4 pb-2 bg-dark rounded-2">
+                    <img class="mt-n4" src="./img&icon/pod.png" alt="scoot">
+                    <p class="text-secondary">2d ago . Part Time</p>
+                    <h6 class="text-light fw-bolder">Remote DevOps Engineer</h6>
+                    <p class="text-secondary">Pod</p>
+                    <p class="text-primary">Thailand</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="col-12 ps-4 pb-2 bg-dark rounded-2">
+                    <img class="mt-n4" src="./img&icon/creative.png" alt="scoot">
+                    <p class="text-secondary">4d ago . Part Time</p>
+                    <h6 class="text-light fw-bolder">Desktop Support Manager</h6>
+                    <p class="text-secondary">Creative</p>
+                    <p class="text-primary">Germany</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="col-12 ps-4 pb-2 bg-dark rounded-2">
+                    <img class="mt-n4" src="./img&icon/pomodoro.png" alt="scoot">
+                    <p class="text-secondary">1w ago . Full Time</p>
+                    <h6 class="text-light fw-bolder">iOS Engineer</h6>
+                    <p class="text-secondary">Pomodoro</p>
+                    <p class="text-primary">United States</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="col-12 ps-4 pb-2 bg-dark rounded-2">
+                    <img class="mt-n4" src="./img&icon/maker.png" alt="scoot">
+                    <p class="text-secondary">1w ago . Full Time</p>
+                    <h6 class="text-light fw-bolder">Senior EJB Developer</h6>
+                    <p class="text-secondary">Maker</p>
+                    <p class="text-primary">United Kingdom</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="col-12 ps-4 pb-2 bg-dark rounded-2">
+                    <img class="mt-n4" src="./img&icon/coffeeroasters.png" alt="scoot">
+                    <p class="text-secondary">1w ago . Part Time</p>
+                    <h6 class="text-light fw-bolder">Senior Frontend Developer</h6>
+                    <p class="text-secondary">coffeeroasters</p>
+                    <p class="text-primary">Singapore</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="col-12 ps-4 pb-2 bg-dark rounded-2">
+                    <img class="mt-n4" src="./img&icon/mastercraft.png" alt="scoot">
+                    <p class="text-secondary">2w ago . Freelance</p>
+                    <h6 class="text-light fw-bolder">App & Website Designer</h6>
+                    <p class="text-secondary">Mastercraft</p>
+                    <p class="text-primary">United States</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="col-12 ps-4 pb-2 bg-dark rounded-2">
+                    <img class="mt-n4" src="./img&icon/crowdfund.png" alt="scoot">
+                    <p class="text-secondary">1mo ago . Part Time</p>
+                    <h6 class="text-light fw-bolder">Fullstack Developer</h6>
+                    <p class="text-secondary">Crowdfund</p>
+                    <p class="text-primary">New Zealand</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="col-12 ps-4 pb-2 bg-dark rounded-2">
+                    <img class="mt-n4" src="./img&icon/typemaster.png" alt="scoot">
+                    <p class="text-secondary">4d ago . Part Time</p>
+                    <h6 class="text-light fw-bolder">Technical Lead Engineer</h6>
+                    <p class="text-secondary">Typemaster</p>
+                    <p class="text-primary">United Kingdom</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="d-flex flex-row p-2 justify-content-center">
+            <div><button class="btn fw-semibold btn-primary" type="button" style="width:141px; height:48px">Load More</button></div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.bundle.js">
+        
+    </script>
+</body>
+</html>
